@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+  max-width: 80em;
+  margin: 2em auto;
+  overflow: auto;
+  min-height: 100vh;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
 .App-logo {
@@ -7,32 +12,56 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-top: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 2.5em;
+  margin-bottom: .75em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+  font-size: 2em;
+  margin-bottom: .85em;
+}
+
+.nameReveal {
+  margin-top: 1em;
+}
+.questions-section {
+  padding-top: 2em;
+}
+
+#name, #qualityChoiceRight {
+  margin-right: 10px;
+}
+
+#questionChoice, #qualityChoiceRight {
+  margin-left: 10px;
+}
+
+.container {
+  display: block;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+.filteredCards > img {
+  max-width: 22%;
+  padding: 5px;
+}
+
+.giveUp:hover {
+  background-color: red;
+}
+
+.randomCard {
+  font-size: 25px;
+  padding: 5px 15px;
+  margin-bottom: 2em;
 }
